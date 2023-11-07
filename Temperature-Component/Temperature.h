@@ -20,6 +20,12 @@ class Heating_Cooling_Unit:public Temperature
 private:
 	bool state;
 public:
+	Heating_Cooling_Unit() :Temperature() 
+	{
+		state = 0;
+		Temperature t1;
+		t1.setTempDegree(0);
+	};
 	void setState(bool);
 	bool getState();
 };
