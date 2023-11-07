@@ -5,15 +5,14 @@ using namespace std;
 
 int main(void)
 {
-	Temperature Device1;
-	//core functionality
-	Device1.setState(true);
-	Device1.setTempDegree(50);
-	cout << "Device1 has been set a temp of " << Device1.getTempDegree() << "C" << endl; //gui prompt
-	
-	//#1 perspective
-	cout << "Enter the time in seconds for device1 to run continuously" << endl; //gui prompt
-	int timeInSeconds;
-	cin >> timeInSeconds;
-	Device1.setPeriodicTimerInSeconds(timeInSeconds);//make the gui loop this continuously until the device is forced shutdown
+	Temperature t1;
+	t1.setTempDegree(75);
+	cout << "current temp: " << t1.getTempDegree() << endl;
+	cout << "Increased temp: " << t1.increaseTemp() << endl;
+	cout << "\n\n";
+	Temperature t2;
+	t2.setTempDegree(22);
+	cout << "current temp: " << t2.getTempDegree() << endl;
+	cout << "Decreased temp: " << t2.decreaseTemp() << endl;
+
 }
