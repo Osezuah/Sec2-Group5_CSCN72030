@@ -21,9 +21,15 @@
     <ClCompile Include="Temperature.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="DateAndTime.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Temperature.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DateAndTime.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
